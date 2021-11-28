@@ -1,0 +1,20 @@
+<html> 
+    
+    <body>
+        <script>
+    function check()
+    {
+        var name=document.getElementById("n1").value;
+        var mark=document.getElementById("m1").value;
+        (mark>=35)?document.writeln(name+" pass"):document.writeln(name+" fail");
+
+    }
+</script>
+</body>
+<h1>students details</h1>
+enter name
+<input type="text" name="text" id="n1"><br><br>
+enter mark
+<input type="number" name="mark" id="m1"><br><br>
+<input type="submit" value="check" onclick="check();"><br><br>
+</html>

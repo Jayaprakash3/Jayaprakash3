@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>
+        result ckeck
+    </title>
+    <script>
+        function check(){
+            var name=document.getElementById("n1").value;
+        var mark=document.getElementById("m1").value;
+       (mark>=35)?document.writeln(name+" </br>pass:"):document.writeln(name+" fail");
+
+        
+//        var mark;
+// m1= prompt("enter the mark ");
+        if(mark==35)
+        {
+            document.writeln("just pass");
+            document.writeln("<br>","GRADE: G ");
+
+        }
+       else
+         if((mark>=36)&&(mark<=40))
+        {
+            document.writeln("pass");
+            document.writeln("<br>","GRADE: F");
+        }
+        else if((mark>=41) && (mark<=60))
+        {
+            document.writeln("average");
+            document.writeln("<br>","GRADE: E");
+
+
+        }
+        else if((mark>=61) && (mark<=70))
+        {
+            document.writeln("good");
+            document.writeln("<br>","GRADE: ");
+
+
+        }
+        else if((mark>=71) && (mark<=80))
+        {
+            document.writeln("very good ");
+            document.writeln("<br>","GRADE: C");
+
+
+        }
+        else if((mark>=81) && (mark<=90))
+        {
+            document.writeln("Excelent ");
+            document.writeln("<br>","GRADE: B");
+
+
+        }
+        else if((mark>=91) && (mark<=99))
+        {
+            document.writeln("Brilliant ");
+            document.writeln("<br>","GRADE: A");
+
+
+        }
+        
+        
+        else if((mark<=34) && (mark>=0))
+        {
+            document.writeln("fail");
+            document.writeln("<br>NO GRADE");
+
+            
+
+        }
+        else if(mark==100)
+        {
+            document.writeln("centom");
+            document.writeln("<br>","GRADE: O");
+
+        }
+        else{
+            document.writeln("enter your correct mark ");
+
+        }
+    }
+        
+    </script>
+</head>
+
+</body>
+<h1>students details</h1>
+enter name
+<input type="text" name="text" id="n1"><br><br>
+enter mark
+<input type="number" name="mark" id="m1"><br><br>
+<input type="submit" value="check" onclick="check();"><br><br>
+
+</html>
+</html>

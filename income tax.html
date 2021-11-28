@@ -1,0 +1,47 @@
+
+<html>
+    <head>
+    <title>
+        imcometax
+    </title>>
+</head>
+<style>
+     body{
+        background-image: url('incometax.jpg');
+        background-size: 1500px;
+        color: yellow;
+        
+         
+    }
+</style><body>
+        
+    <script>
+        var income;
+        income=prompt("Enter your Annual income ","300000");
+        var limit=200000;
+         if((income>limit) && (income<=300000))
+        {
+            document.write("pay 10% of your income as tax");
+
+        }
+        
+        else if((income>300000) && (income<=400000))
+        {
+            document.write("pay 20% of your income as tax");
+
+        }        
+        else if(income>400000)
+        {
+            document.write("pay 30% of your income as tax");
+
+        }        
+        else 
+        {
+            document.write("no need to pay income");
+
+        }
+       
+    </script>
+</body>
+
+</html>
